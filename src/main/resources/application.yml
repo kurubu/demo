@@ -1,0 +1,16 @@
+server:
+  port: 80
+spring:
+  application:
+    name: client
+  datasource:
+    url: jdbc:mysql://192.168.10.137:3306/dome?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai&characterEncoding=UTF-8
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+beetlsql:
+  basePackage: com.example.dao
+  dbStyle: org.beetl.sql.core.db.MySqlStyle
+  sqlRoot: /sql
+  debug: 1
